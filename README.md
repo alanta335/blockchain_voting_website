@@ -9,6 +9,6 @@ npm install -g truffle
 cd client
 npm start
 ............................
-Another terminal(to run in window's is truffle.cmd in linux truffle)
+Another terminal(to run in window's is truffle.cmd in linux truffle)............
 cd truffle
 truffle.cmd migrate --network development
