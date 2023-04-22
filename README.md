@@ -1,14 +1,14 @@
 # blockchain_voting_website
- voting website using blockchain smart contract. 
+ voting website using blockchain smart contract. <br />
 
-To run
-install metamask,ganache,react,nodejs
+To run<br />
+install metamask,ganache,react,nodejs<br />
 
 ...................................<br />
-npm install -g truffle    ,
-cd client   ,
-npm start   ,
+npm install -g truffle<br />
+cd client<br />
+npm start<br />
 ............................<br />
 Another terminal(to run in window's is truffle.cmd in linux truffle)............<br />
-cd truffle   ,
-truffle.cmd migrate --network development   .
+cd truffle<br />
+truffle.cmd migrate --network development<br />
