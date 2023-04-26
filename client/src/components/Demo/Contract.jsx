@@ -1,10 +1,10 @@
-import { useRef, useEffect } from "react";
 
-function Contract({ value }) {
+
+function Contract({ value, name }) {
 
   return (
     <code>
-      {`value = `}
+      {`number vote for `}{name}{`  = `}
       <span className="secondary-color" >
         {value}
       </span>

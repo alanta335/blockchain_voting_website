@@ -1,31 +1,21 @@
-import { useState } from "react";
+
 import useEth from "../../contexts/EthContext/useEth";
 
-function ContractBtns({ setValue }) {
+function ContractBtns() {
   const { state: { contract, accounts } } = useEth();
 
-  const read = async () => {
-    const value = await contract.methods.read1().call({ from: accounts[0] });
-    setValue(value);
-  };
-  
+
+
 
   const write = async e => {
-    
+
     await contract.methods.vote1().send({ from: accounts[0] });
   };
   return (
-    <div className="btns">
-
-      <button onClick={read}>
-        read()
-      </button>
-
-      <div onClick={write} className="input-btn">
-        vote
-      </div>
-
-    </div>
+    <button onClick={write} className="btns">
+      <img className="im" src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png" />
+      vote for ash
+    </button>
   );
 }
 
